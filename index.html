@@ -4,22 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Kokoa Talk</title>
+    <title>Welcome to Kokoa Clone</title>
 </head>
 <body>
+<!-- 상단 상태바 div박스 -->
     <div class="status-bar">
         <div class="status-bar__column">
             <span>No Service</span>
-            <!-- To Do: Wifi Icon -->
+            <i class="fa-solid fa-wifi"></i>
         </div>
         <div class="status-bar__column">
             <span>18:43</span>
         </div>
         <div class="status-bar__column">
             <span>110%</span>
-            <!-- Battery Icon -->
-            <!-- Lightning Icon -->
+            <i class="fa-solid fa-battery-three-quarters"></i>
+            <i class="fa-solid fa-bolt"></i>
         </div>
     </div>
+<!-- 헤더 태그 -->
+    <header class="welcome-header">
+        <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
+        <p class="welcome-header__text">If you have a Kokoa Account, log in with your email or phone number.</p>
+    </header>
+<!-- 제출 폼 태그 -->
+    <form action="" id="login-form">
+        <input type="text" placeholder="Email or phone number">
+        <input type="text" placeholder="Password">
+        <input type="submit" value="Log In">
+        <!-- "일단 링크를 form 안쪽으로 옮기면, css에서 id="login-form"를 통해 링크를 선택할 수 있어. 링크는 정말 많이 쓸거라서 이거 하나만을 위한 id나 class를 추가하고 싶지 않거든" -->
+        <a href="#">Find KoKoa Account or Password</a>
+    </form>
+
+    <script src="https://kit.fontawesome.com/2db2aaa414.js" crossorigin="anonymous"></script>
 </body>
 </html>
