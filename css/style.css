@@ -1,64 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
-@import "reset.css";
 /* css 코드를 여러 파일로 분할해서 import */
-@import "status-bar.css";
+@import "reset.css";
 @import "variables.css";
 
+/* Components */
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+
+/* Screens */
+@import "screens/login.css";
+
+/* 
+style.css 파일에는 font-family와 같이 모든 스크린에 적용될 스타일을 놓는게 나의 스타일이다.
+나는 이렇게 쓰는게 좋다. 그리고 code도 정말 아름다워 보여.
+ */
 body {
     font-family: 'Open Sans', sans-serif;
-}
-
-.welcome-header {
-    margin: 90px 0px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.welcome-header__title {
-    margin-bottom: 20px;
-    font-size: 25px;
-}
-.welcome-header__text {
-    width: 60%;
-    opacity: 0.7;
-}
-
-#login-form {
-    display: flex;
-    flex-direction: column;
-    margin: 0px 30px;
-}
-
-#login-form input  {
-    border: none;
-    padding: 15px 0px;
-    font-size: 17px;
-    margin-bottom: 25px;
-}
-/* []안에 들어간 정보는 특성 선택자(attribute selector)이다. input의 type에서 "submit"이 아닐때. */
-#login-form input:not([type="submit"]) {
-    border-bottom: 1px solid rgba(0, 0, 0 , 0.2);
-    transition: border-color 0.3s ease-in-out;
-}
-
-#login-form input::placeholder {
-    color: rgba(0, 0, 0 , 0.4);
-}
-#login-form input:focus {
-    border-color: var(--yellow);
-}
-
-#login-form input[type="submit"] {
-    background-color: var(--yellow);
-    cursor: pointer;
-    padding: 20px 0px;
-    border-radius: 5px;
-}
-
-#login-form a {
-    text-align: center;
-    text-decoration: none;
-    color: inherit;
-    font-size: 13px;
 }

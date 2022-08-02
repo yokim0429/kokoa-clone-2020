@@ -24,19 +24,26 @@
             <i class="fa-solid fa-bolt"></i>
         </div>
     </div>
-<!-- 헤더 태그 -->
-    <header class="welcome-header">
-        <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
-        <p class="welcome-header__text">If you have a Kokoa Account, log in with your email or phone number.</p>
-    </header>
-<!-- 로그인 폼 태그 -->
-    <form action="friends.html" method="get" id="login-form">
-        <input name="username" type="text" placeholder="Email or phone number">
-        <input name="password" type="password" placeholder="Password">
-        <input type="submit" value="Log In">
-
-        <a href="#">Find KoKoa Account or Password</a>
-    </form>
+<!-- 
+    검색엔진 구글고 navigation을 찾아서 ul의 안에 있는 link를 가져오게끔 설정되어 있어.
+    구글에서 검색하면 그 안의 link가 뜨는거야.
+ -->
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nave__btn">
+                <a class="nav__link" href="friends.html"><i class="fa-solid fa-user fa-xl"></i></a>
+            </li>
+            <li class="nave__btn">
+                <a class="nav__link" href="#"><i class="fa-solid fa-comment fa-xl"></i></a>
+            </li>
+            <li class="nave__btn">
+                <a class="nav__link" href="#"><i class="fa-solid fa-magnifying-glass fa-xl"></i></a>
+            </li>
+            <li class="nave__btn">
+                <a class="nav__link" href="#"><i class="fa-solid fa-ellipsis fa-xl"></i></a>
+            </li>
+        </ul>
+    </nav>
 
     <script src="https://kit.fontawesome.com/2db2aaa414.js" crossorigin="anonymous"></script>
 </body>
