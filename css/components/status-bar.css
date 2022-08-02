@@ -1,4 +1,6 @@
 .status-bar {
+    position: fixed; /* 콘텐츠를 위치 고정을 설정하는 "css property sets"  */
+    width: 100%;
     display: flex;
     justify-content: center;
     padding: 5px 3px;

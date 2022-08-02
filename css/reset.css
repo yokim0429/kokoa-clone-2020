@@ -56,3 +56,8 @@ A: You can put it anywhere you want, but because it is something that disables t
 input:focus {
 	outline: none;
 }
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
