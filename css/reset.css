@@ -47,6 +47,12 @@ table {
 	border-spacing: 0;
 }
 
+/* 
+QnA
+Q: focus 되었을 때의 outline 제거 코드를 따로 reset.css에 넣는데 다른 이유는 뭔가요? 아니면 아웃라인도 브라우저의 기본값 디자인이라는 점에서 "reset.css" 파일에 들어가는 건가요?
+A: You can put it anywhere you want, but because it is something that disables the default style I'm putting it on "reset.css".
+원하는 곳에 둘 수 있지만 '기본 스타일'을 '비활성화'하는 것이므로 "reset.css"에 넣습니다.
+ */
 input:focus {
 	outline: none;
 }
