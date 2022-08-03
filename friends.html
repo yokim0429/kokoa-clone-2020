@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- css 파일 import 링크 -->
     <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +8,7 @@
     <title>Welcome to Kokoa Clone</title>
 </head>
 <body>
-<!-- 상단 상태 박스 -->
+    <!-- 상단 상태 박스 -->
     <div class="status-bar">
         <div class="status-bar__column">
             <span>No Service</span>
@@ -24,7 +23,7 @@
             <i class="fa-solid fa-bolt"></i>
         </div>
     </div>
-<!-- 헤더 박스 -->
+    <!-- 헤더 박스 -->
     <header class="screen-header">
         <h1 class="screen-header__title">Friends</h1>
         <div class="screen-header__icons">
@@ -39,24 +38,48 @@
             </span>
         </div>
     </header>
-<!-- 유저 박스 -->
+    <!-- 유저 박스 -->
     <a id="friends-display-link">
-        <i class="fa-solid fa-circle-info"></i> Friends Name Display <i class="fa-solid fa-chevron-right fa-xs"></i>
+        <i class="fa-solid fa-circle-info"></i>
+        <span>Friends Name Display</span>
+        <i class="fa-solid fa-chevron-right fa-xs"></i>
     </a>
-<!-- 친구 박스 -->
-    <div class="user-component">
-        <div class="user-component__column">
-            <img class="user-component__avatar" src="image0423.jpeg" alt="photo">
-            <div class="user-component__text">
-                <h4 class="user-component__title">Yokim</h4>
-                <h6 class="user-component__subtitle">this text whatever</h6>
+    <!-- 메인 박스 -->
+    <main class="friends-screen">
+        <!-- 유저 박스 -->
+        <div class="user-component">
+            <div class="user-component__column">
+                <img class="user-component__avatar user-component__avatar--xl" src="image0423.jpeg" alt="photo">
+                <div class="user-component__text">
+                    <h4 class="user-component__title">Yokim</h4>
+                    <!-- <h6 class="user-component__subtitle">this text whatever</h6> -->
+                </div>
+            </div>
+            <div class="user-component__column">
+                <!-- empty -->
             </div>
         </div>
-        <div class="user-component__column">
-            <!-- empty -->
+        <!-- 채널 박스 -->
+        <div class="friends-screen__channel">
+            <div class="friends-screen__channel-header">
+                <span>Channel</span>
+                <i class="fa-solid fa-chevron-up fa-xs"></i>
+            </div>
+            <div class="user-component">
+                <div class="user-component__column">
+                    <img class="user-component__avatar user-component__avatar--sm" src="image0423.jpeg">
+                    <div class="user-component__text">
+                        <h4 class="user-component__title">Channel</h4>
+                    </div>
+                </div>
+                <div class="user-component__column">
+                    <span>2</span>
+                    <i class="fa-solid fa-chevron-right fa-xs"></i>
+                </div>
+            </div>
         </div>
-    </div>
-<!-- 내비게이션 박스 -->
+    </main>
+    <!-- 내비게이션 박스 -->
     <nav class="nav">
         <ul class="nav__list">
             <li class="nave__btn">
@@ -85,7 +108,7 @@
             </li>
         </ul>
     </nav>
-<!--  -->
+    <!--  -->
 
     <script src="https://kit.fontawesome.com/2db2aaa414.js" crossorigin="anonymous"></script>
 </body>
