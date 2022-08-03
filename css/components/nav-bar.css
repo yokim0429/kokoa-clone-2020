@@ -37,3 +37,15 @@ nav {
     left: 17px;
     bottom: 17px;
 }
+
+.nav__ellipsis {
+    background-color: tomato;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    position: absolute;
+    left: 28px;
+}
