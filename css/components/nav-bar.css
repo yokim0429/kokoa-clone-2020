@@ -4,6 +4,10 @@ nav {
     width: 100%;
     background-color: #f9f9fa;
     padding: 20px 50px;
+    /* 
+    #6.12 Border-Box "CSS에게 box 사이즈를 변경하지 말라고 알려줘야해"
+    "왜냐면 padding을 주고 싶은데, box 사이즈는 그대로 있길 바라니까"
+     */
     box-sizing: border-box;
     border-top: 1px solid rgba(120,120,120,0.3);
 }
@@ -14,5 +18,22 @@ nav {
 }
 
 .nav__link {
+    position: relative;
     color: #2e363e;
+}
+
+.nav__notification {
+    background-color: tomato;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    /* 기억해! "position: absolute"는 가장 가까운 "position: relative"를 가진 부모 기준으로 움직인다.
+    곧, nav__notification와 가까운 부모태그는 nav__link이다. */
+    position: absolute;
+    left: 17px;
+    bottom: 17px;
 }
