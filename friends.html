@@ -9,7 +9,7 @@
     <title>Welcome to Kokoa Clone</title>
 </head>
 <body>
-<!-- 상단 상태바 div박스 -->
+<!-- 상단 상태 박스 -->
     <div class="status-bar">
         <div class="status-bar__column">
             <span>No Service</span>
@@ -24,10 +24,22 @@
             <i class="fa-solid fa-bolt"></i>
         </div>
     </div>
-<!-- 
-    검색엔진 구글고 navigation을 찾아서 ul의 안에 있는 link를 가져오게끔 설정되어 있어.
-    구글에서 검색하면 그 안의 link가 뜨는거야.
- -->
+<!-- 헤더 박스 -->
+    <header class="screen-header">
+        <h1 class="screen-header__title">Friends</h1>
+        <div class="screen-header__icons">
+            <span>
+                <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+            </span>
+            <span>
+                <i class="fa-solid fa-music fa-xl"></i>
+            </span>
+            <span>
+                <i class="fa-solid fa-gear fa-xl"></i>
+            </span>
+        </div>
+    </header>
+<!-- 하단 내비게이션 박스 -->
     <nav class="nav">
         <ul class="nav__list">
             <li class="nave__btn">
@@ -39,7 +51,8 @@
                 <a class="nav__link" href="#">
                     <!-- 알림 아이콘 -->
                     <span class="nav__notification">1</span>
-                    <i class="fa-solid fa-comment fa-2x"></i>
+                    <i class="fa-regular fa-comment fa-2x"></i>
+                    <!-- <i class="fa-solid fa-comment fa-2x"></i> -->
                 </a>
             </li>
             <li class="nave__btn">
@@ -55,6 +68,7 @@
             </li>
         </ul>
     </nav>
+<!--  -->
 
     <script src="https://kit.fontawesome.com/2db2aaa414.js" crossorigin="anonymous"></script>
 </body>

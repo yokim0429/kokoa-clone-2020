@@ -6,6 +6,7 @@
 /* Components */
 @import "components/status-bar.css";
 @import "components/nav-bar.css";
+@import "components/screen-header.css";
 
 /* Screens */
 @import "screens/login.css";
@@ -16,5 +17,5 @@ style.css 파일에는 font-family와 같이 모든 스크린에 적용될 스�
  */
 body {
     font-family: 'Open Sans', sans-serif;
-    height: 1000vh;
+    height: 100vh;
 }
