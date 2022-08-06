@@ -13,19 +13,13 @@
     border: 1px solid rgba(0, 0, 0, 0.2);
     width: 70px;
     height: 70px;
-    border-radius: 30px;
+    border-radius: 25px;
     margin-right: 20px;
 }  
 
 .user-component__title {
     font-weight: 600;
     font-size: 22px;
-}
-
-.user-component__subtitle {
-    margin-top: 8px;
-    font-size: 17px;
-    color: rgba(0, 0, 0, 0.5);
 }
 
 .user-component__avatar--xl {
@@ -36,7 +30,13 @@
 .user-component__avatar--sm {
     width: 60px;
     height: 60px;
-    border-radius: 25px;
+    border-radius: 22px;
+}
+
+.user-component__subtitle {
+    margin-top: 8px;
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .user-component__title--not-bold {
