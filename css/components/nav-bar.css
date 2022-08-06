@@ -20,14 +20,6 @@ nav {
 }
 
 .nav__notification {
-    background-color: tomato;
-    width: 24px;
-    height: 24px;
-    border-radius: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
     /* 기억해! "position: absolute"는 가장 가까운 "position: relative"를 가진 부모 기준으로 움직인다.
     곧, nav__notification와 가까운 부모태그는 nav__link이다. */
     position: absolute;
