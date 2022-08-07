@@ -1,0 +1,19 @@
+.icon-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-row__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* icon-row__icon 클래스 안에 있는 <i>아이콘만 선택 적용해야 한다! */
+.icon-row__icon i {
+    font-size: 35px;
+}
+
+.icon-row__icon span {
+    text-align: center;
+    margin-top: 15px;
+}

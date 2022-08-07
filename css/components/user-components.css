@@ -1,5 +1,5 @@
+
 .user-component {
-    /* display: flex; */
     justify-content: space-between;
 }
 
@@ -7,7 +7,7 @@
 .user-component__column:first-child {
     display: flex;
     align-items: center;
-    margin-bottom: 4%;
+    margin-bottom: 12px;
 }
 
 .user-component__avatar {
@@ -54,4 +54,13 @@
 .user-component__time {
     margin-bottom: 10px;
     display: block;
+}
+
+.user-component__exclamation {
+    /* filter: invert(90%); */
+    color: white;
+    display: inline-block;
+    border: 1px solid tomato;
+    border-radius: 50%;
+    background-color: tomato;
 }
