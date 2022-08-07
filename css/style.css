@@ -13,11 +13,8 @@
 /* Screens */
 @import "screens/login.css";
 @import "screens/friends.css";
+@import "screens/find.css";
 
-/* 
-style.css 파일에는 font-family와 같이 모든 스크린에 적용될 스타일을 놓는게 나의 스타일이다.
-나는 이렇게 쓰는게 좋다. 그리고 code도 정말 아름다워 보여.
- */
 body {
     color: #2e363e;
     font-family: 'Open Sans', sans-serif;

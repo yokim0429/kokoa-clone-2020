@@ -9,3 +9,26 @@
     color: white;
     font-weight: 600;
 }
+
+.badge__point {
+    background-color: tomato;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    position: absolute;
+    left: 28px;
+}
+
+.badge__point-find {
+    background-color: tomato;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    display: flex;
+    position: absolute;
+    left: 1px;
+    bottom: 20px;
+}
