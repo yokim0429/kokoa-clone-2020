@@ -1,7 +1,13 @@
 .icon-row {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
+
+/* 
+#icon-row__second {
+    display: flex;
+}
+ */
 
 .icon-row__icon {
     display: flex;
