@@ -19,10 +19,38 @@ nav {
     color: #2e363e;
 }
 
+@keyframes notificationAnimation {
+    0% {
+        transform: none;
+    }
+    50% {
+        transform: translateY(-5px) rotateX(30deg);
+    }
+    100% {
+        transform: none;
+    }
+}
+
 .nav__notification {
     /* 기억해! "position: absolute"는 가장 가까운 "position: relative"를 가진 부모 기준으로 움직인다.
     곧, nav__notification와 가까운 부모태그는 nav__link이다. */
     position: absolute;
     left: 17px;
     bottom: 17px;
+    animation: notificationAnimation 2s ease-in-out infinite;
+}
+
+@keyframes appearBtnAnimation {
+    from {
+        transform: translateY(80px);
+        opacity: 0;
+    }
+    to {
+        transform: none;
+        opacity: 1;
+    }
+}
+
+.nav__btn {
+    animation: appearBtnAnimation 1s ease-in-out;
 }
